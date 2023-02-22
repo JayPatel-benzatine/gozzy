@@ -1,0 +1,76 @@
+.maps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.contact-right > ul > li {
+  position: relative;
+  padding-left: 155px;
+  margin-top: 55px;
+  display: block;
+}
+.contact-icon {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 130px;
+  border-right: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-icon > .MuiSvgIcon-root {
+  color: #f66354;
+}
+.contact-icon > h6 {
+  color: #7165e3;
+  font-weight: bolder;
+}
+.media-body > p {
+  line-height: 25px;
+}
+@media (max-width: 768px){
+  .maps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .contact-right > ul > li {
+    position: relative;
+    padding-left: 155px;
+    margin-top: 35px;
+    display: block;
+  }
+  .add_left {
+    border-radius: 15px;
+    
+}
+}
+@media (max-width: 425px) {
+  .add_left {
+    width: 100%;
+    height: 310px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    
+  }
+  
+}
+@media (min-width: 770px) and (max-width:1440px) {
+  .add_left {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+  }
+  .media-body > p {
+    line-height: 15px;
+  }
+ .maps{
+     gap: 20px;
+ }
+}

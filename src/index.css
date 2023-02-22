@@ -1,0 +1,45 @@
+@import url('http://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import 'animate.css';
+
+:root {
+  --theme-deafult: #7165E3;
+  --theme-gradient1: #01effc;
+  --theme-gradient2: #485ff2;
+ 
+}
+
+::-webkit-scrollbar{
+  width: 0.3rem;
+  height: 0.3rem;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(217, 217, 217);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #7165E3;
+  border-radius: 1rem;
+  border: 0.4rem solid transparent;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+  overflow-x: hidden;
+}
+.s_class{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  margin: auto;
+}
+@media (min-width:768px) {
+  .s_class{
+   position: absolute;
+  }
+}

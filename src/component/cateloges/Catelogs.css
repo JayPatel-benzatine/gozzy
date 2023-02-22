@@ -1,0 +1,87 @@
+.catalogs {
+  margin-top: 50px;
+}
+.service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.small-section {
+  padding: 25px 0px;
+}
+.border-section {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.truck {
+  margin-bottom: 15px;
+  height: auto ;
+  width: 46px ;
+  transition: all 0.5s ease;
+}
+
+.service-block {
+  padding: 5px 5px;
+}
+.media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #dddddd;
+  height: 90px;
+}
+.annouce{
+  border-right:unset ;
+}
+.media-body > h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.media-body > p {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #777777;
+  line-height: 1;
+}
+.service-block:hover h4 {
+  color: #7165e3;
+  transition: all 0.3s ease;
+  
+}
+.service-block:hover img {
+  animation: pulse 1000ms ease-in-out ;
+  transition: all 0.3s ease ;
+}
+
+@media (max-width:425px) and (min-width:320px){
+  .service {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .media{
+    display: flex;
+    flex-direction: column;
+    border: unset;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (min-width:769px){
+.media{
+  display: flex;
+    justify-content: center;
+}
+.media-body > h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.media-body > p {
+  font-size: 16px;
+  color: #777777;
+}
+.truck{
+  width: 65px;
+  height: 65px;
+}
+}

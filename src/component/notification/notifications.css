@@ -1,0 +1,51 @@
+.notification_main{
+    position: relative;
+}
+.notification_head h1::after {
+    position: absolute;
+    height: 2px;
+    width: 120px;
+    background-color: #7165E3;
+    background-color: var(--theme-deafult);
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 43px;
+}
+.notification_heading>h3{    
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+}
+@media (max-width:425px) and (min-width:321px){
+    .notification_head h1::after {
+        width: 150px;
+        top: 40px;
+    }
+    .f_heading{
+        flex-direction: column;
+    }
+    .notify{
+        padding: 8px !important;
+        width: 150px;
+    }
+}
+@media (max-width:320px) {
+    .notification_head h1::after {
+        display: none;
+    }
+    .notification_heading>h3{    
+        font-size: large;
+    }
+    .notify_label{
+        font-size: 14px;
+    }
+    .notify{
+        padding: 8px !important;
+        width: 150px;
+    }
+    .f_heading{
+        flex-direction: column;
+    }
+}

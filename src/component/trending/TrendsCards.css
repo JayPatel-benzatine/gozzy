@@ -1,0 +1,30 @@
+.h_mains {
+  overflow: hidden;
+}
+.titles {
+  height: 80px;
+  margin-top: 10px;
+  font-size: 28px;
+  position: relative;
+}
+.titles>h6{
+    color: #7165e3;
+    font-weight: 100;
+}
+.titles > h2::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100px;
+  background-color: #7165e3;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 12px;
+}
+/* @media (max-width:426px) {
+  .h_mains {
+   height: unset !important;
+  }
+} */
+

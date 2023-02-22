@@ -1,0 +1,143 @@
+.carousel {
+  height: 65vh;
+}
+.catalogs {
+  margin-bottom: 50px;
+}
+.carousel-caption {
+  position: absolute !important;
+  top: 35% !important;
+  left: 50px !important;
+  color: black;
+  width: 450px;
+}
+.carousel-caption > h4 {
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  color: #777777;
+}
+.carousel-caption > h1 {
+  margin-bottom: 0;
+  margin-top: 10px;
+  color: #222222;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.carousel-item > img {
+  height: 65vh;
+  object-fit: cover;
+}
+.carousel-indicators {
+  display: none !important;
+}
+.btn_shop {
+  padding: 13px 29px;
+  margin-top: 10px;
+  letter-spacing: 0.05em;
+  background-color: #7165e3;
+  border: none;
+}
+.btn_shop:hover {
+  background: transparent;
+  border: 2px solid #7165e3;
+  color: #222222;
+}
+.carousel-control-prev-icon {
+  background-color: #ada9a967;
+  border-radius: 100%;
+  padding: 20px;
+  background-position: center;
+  background-size: 25px 20px;
+}
+
+.carousel-control-next-icon {
+  background-color: #ada9a967;
+  border-radius: 100%;
+  padding: 20px;
+  background-position: center;
+  background-size: 25px 20px;
+}
+.carousel-slider {
+  height: 100% !important;
+}
+
+@media only screen and (min-width: 1020px) {
+  .carousel-caption > h1 {
+    font-size: 60px;
+  }
+  .carousel-caption {
+    width: 900px;
+    text-align: center;
+  }
+  .carousel-caption > h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .carousel-item > img {
+    height: 75vh;
+    object-fit: cover;
+  }
+  .carousel-caption {
+    position: absolute !important;
+    top: 35% !important;
+    left: 50px !important;
+    color: black;
+    width: 450px;
+  }
+  .carousel {
+    height: 150px !important;
+  }
+  .carousel-slider{
+    height: 100% !important;
+}
+}
+@media (max-width: 768px) and (min-width: 426px) {
+  .carousel-caption > h1 {
+    font-size: 36px;
+  }
+  .carousel-caption > h4 {
+    font-size: 16px;
+  }
+  .carousel-caption {
+    width: 290px;
+    text-align: center;
+  }
+  .carousel {
+    height: 150px !important;
+  }
+  .carousel-slider {
+    height: 100% !important;
+  }
+}
+@media (max-width: 425px) and (min-width: 320px) {
+  .carousel-caption > h1 {
+    font-size: 23px;
+  }
+  .carousel-caption > h4 {
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
+  .carousel-caption {
+    width: 290px;
+    text-align: left;
+  }
+  .carousel {
+    height: 150px !important;
+  }
+  .carousel-slider {
+    height: 100% !important;
+  }
+  .carousel-item > img {
+    height: 45vh;
+    object-fit: cover;
+  }
+  .btn_shop {
+    height: 30%;
+    font-size: 12px;
+    width: 30%;
+    padding: 0;
+  }
+}

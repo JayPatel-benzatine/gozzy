@@ -1,0 +1,19 @@
+.h_main {
+  overflow: hidden;
+}
+.title {
+  height: 80px;
+  font-size: 28px;
+  position: relative;
+}
+.title > h2::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 80px;
+  background-color: #7165e3;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 20px;
+}

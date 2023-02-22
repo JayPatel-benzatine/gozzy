@@ -1,0 +1,51 @@
+/* #progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+} */
+
+/* 
+<div id="progress" className=" animate__animated animate__fadeInUp">
+        <KeyboardDoubleArrowUpIcon id="progress-value"/>
+      </div> */
+/* 
+
+        const calcScrollValue = () => {
+      let scrollProgress = document.getElementById("progress");
+      let progressValue = document.getElementById("progress-value");
+      let pos = document.documentElement.scrollTop;
+      let calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      let scrollValue = Math.round((pos * 100) / calcHeight);
+      if (pos > 100) {
+        scrollProgress.style.display = "grid";
+      } else {
+        scrollProgress.style.display = "none";
+      }
+      scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+      });
+      scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+    };
+
+    window.onscroll = calcScrollValue;
+    window.onload = calcScrollValue; */

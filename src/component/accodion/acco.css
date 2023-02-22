@@ -1,0 +1,10 @@
+/* .MuiCollapse-wrapper{
+    height: 200px ;
+    overflow: scroll;
+    overflow-x: hidden ;
+} */
+.a_body{
+    height: 200px !important ;
+    overflow: scroll;
+    overflow-x: hidden ;
+}

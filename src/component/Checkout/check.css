@@ -1,0 +1,46 @@
+.list_address{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.check_mains{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   column-gap: 30px;
+}
+
+
+@media (max-width:768px) and (min-width:426px) {
+    .list_address{
+        grid-template-columns: 1fr;
+    }
+    .che_option{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:425px) and (min-width:320px) {
+    .check_mains{
+        grid-template-columns: 1fr;
+    }
+    .checkout_right{
+        margin-top: 20px;
+    }
+    .list_address{
+        grid-template-columns: 1fr;
+    }
+    .btn_check{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+    .check_total > td > ul > li {
+            font-size: 10px;
+    }
+    .mainsummery{
+        flex-direction: column;
+        align-items: center;
+    }
+}

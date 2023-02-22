@@ -1,0 +1,30 @@
+.address_main{
+    position: relative;
+}
+.address_head h1::after {
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    background-color: #7165E3;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 40px;
+}
+.fdetais{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+
+}
+@media (max-width:425px){
+    .fdetais{    
+        grid-template-columns:1fr;    
+    }
+}
+@media (min-width:1025px){
+    .fdetais{    
+        grid-template-columns:repeat(3,1fr);    
+    }
+}

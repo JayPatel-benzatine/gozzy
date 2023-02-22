@@ -1,0 +1,123 @@
+.navs {
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-direction: row;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: -6px;
+}
+.navs > li {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.navs > li > button {
+  background: transparent;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid #7165e3;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.P_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 25px;
+}
+.img_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.activebutton{
+  color:#7165e3 ;
+}
+.Deactivebutton{
+  color: unset;
+}
+.lable3 {
+  border-radius: 100%;
+  background-color: #7165e3;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  position: absolute;
+  padding: 9px 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 7px;
+  left: 7px;
+  z-index: 1;
+}
+.lable4 {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  top: 7px;
+  right: 7px;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  color: #212529;
+}
+.cart_menu {
+  transform: rotateY(180deg);
+}
+.cart_menu:hover,.Fav_menu:hover {
+    cursor: pointer;
+    color: #7165e3;
+}
+
+.menus {
+  position: absolute;
+  transition: 0.8s ease;
+  transform: translateX(100px);
+  opacity: 0;
+  bottom: 110px;
+  right: 75px;
+}
+
+#p_cards:hover .menus {
+  transform: translateX(67px);
+  opacity: 1;
+}
+
+@media(min-width:1025px){
+  .P_cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 20px;
+  }
+}
+@media (max-width:768px) and (min-width:426px){
+  .category_btn{
+    margin-bottom: 10px;
+  }
+  .navs > li {
+    padding-left: 0px;
+  }
+}
+@media (max-width:425px) and (min-width:376px){
+  .category_btn{
+    margin-bottom: 10px;
+  }
+  .P_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width:375px) {
+  .category_btn{
+    margin-bottom: 5px;
+  }
+  .P_cards {
+    grid-template-columns:1fr;
+    gap: 15px 0px;
+  }
+}

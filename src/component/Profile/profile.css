@@ -1,0 +1,14 @@
+.profile_main{
+    position: relative;
+}
+.profile_heading >h1::after {
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    background-color: #7165E3;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 40px;
+}

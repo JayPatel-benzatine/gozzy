@@ -1,0 +1,23 @@
+
+@media (max-width: 425px) and (min-width: 320px) {
+  .left_shop {
+    width: 75%;
+    padding-bottom: 0 !important;
+  }
+}
+@media (min-width: 770px){
+  .left_shop{
+    display: unset !important;
+  }
+  .sidebar{
+    display: none;
+  }
+  
+
+}
+@media  (max-width:768px)  {
+  .right_shop{
+    display: grid;
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+.my-custom-scrollbar {
+  position: relative;
+  height: 60vh;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+.filter_btn {
+  background: transparent;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid #7165e3;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}

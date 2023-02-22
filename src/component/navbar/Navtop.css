@@ -1,0 +1,144 @@
+.content {
+  height: 80px;
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone_icon {
+  height: 18px !important;
+  color: var(--theme-deafult);
+  margin-right: 2px;
+}
+.left {
+  /* flex: 1; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.left > p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.left > h6 {
+  font-size: 15px;
+  margin: 10px 15px 0px 0px;
+}
+
+.right {
+  /* flex: 1; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search_btn {
+  background-color: #7165e3;
+  color: white;
+  height: 50px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.input-group > input {
+  height: 50px;
+  padding: 10px;
+  border-radius: 9px;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  outline: none !important;
+}
+.form-control:focus {
+  box-shadow: none;
+  outline: inherit !important;
+  border-color: #999999;
+}
+.btn:focus,
+.btn:hover {
+  border: none;
+  box-shadow: none !important;
+}
+.user {
+  padding-left: 15px;
+  cursor: pointer;
+}
+.user:hover .user_dp {
+  color: #7165e3;
+}
+
+.nav-item .dropdown-menu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  margin-top: 25px;
+  z-index: 1;
+}
+.dropdown-menu.fade-down {
+  top: 80%;
+  transform: rotateX(-75deg);
+  transform-origin: 0% 0%;
+}
+.dropdown-menu.fade-up {
+  top: 50%;
+  right: 0;
+}
+.nav-item:hover .dropdown-menu {
+  transition: 0.5s;
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+  transform: rotateX(0deg);
+  color: #7165e3;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .top_header {
+    height: 150px;
+  }
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .left {
+    padding: 25px 10px 10px 0px;
+  }
+  .right {
+    padding: 0px 10px;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+  .left > p {
+    font-size: 14px;
+  }
+  .left > h6 {
+    font-size: 14px;
+  }
+  .phone_icon {
+    height: 15px !important;
+  }
+  .input-group{
+      margin-right: 0px;
+      width: 500px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .top_header{
+      display: none;
+  }
+}
+@media (min-width: 1430px){
+.container {
+    max-width: 1400px;
+}
+}

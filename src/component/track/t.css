@@ -1,0 +1,41 @@
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  color: #7165e3 !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #a8a8a8 !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+  width: 40px !important;
+  height: 40px !important;
+}
+.css-z7uhs0-MuiStepConnector-line {
+  display: block;
+  border-color: #c3bfe8 !important;
+  border-top-style: solid;
+  border-top-width: 6px !important;
+  border-radius: 15px;
+}
+.css-zpcwqm-MuiStepConnector-root {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  position: absolute;
+  top: 18px !important;
+  left: calc(-50% + 25px) !important;
+  right: calc(50% + 25px) !important;
+}
+.stteper {
+  background: #eceff1;
+  padding: 67px;
+  border-radius: 25px;
+}
+
+.css-qivjh0-MuiStepLabel-label {
+  font-family: unset !important;
+  font-size: 19px !important;
+  color: black !important;
+}
